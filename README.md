@@ -1,6 +1,6 @@
 # Argolo Consultoria e Tecnologia - Landing Page Oficial
 
-Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecnologia**, com design moderno, escuro e tecnológico (Dark Tech Theme) nas cores azul-marinho, ciano, prata e branco.
+Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecnologia**, focada em **Desenvolvimento de Sistemas PDV (Frente de Caixa)**, **Sites para Vendas Online (E-commerce)**, **Sistemas ERP sob medida** e **Consultoria Completa para MEI (da formalização às burocracias diárias)**.
 
 ---
 
@@ -12,61 +12,59 @@ Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecno
 
 ---
 
-## 🏗️ Estrutura da Página
+## 🏗️ Estrutura & Soluções em Destaque
 
 1. **Cabeçalho & Navegação Fixa:**
-   - Logotipo com monograma cibernético: **Argolo Consultoria e Tecnologia**.
-   - Menu dinâmico responsivo (*Início, Quem Somos, Serviços, Diferenciais, Contato*).
-   - Efeito de desfoque de vidro (*Glassmorphism*) e indicador de rolagem ativa.
-   - Menu hambúrguer animado para dispositivos móveis.
+   - Logotipo tecnológico com monograma: **Argolo Consultoria e Tecnologia - Sistemas & Assessoria MEI**.
+   - Menu dinâmico responsivo (*Início, Quem Somos, Soluções, Diferenciais, Contato*).
+   - Efeito *Glassmorphism* com indicador de rolagem ativa e menu mobile adaptado.
 
 2. **Seção Hero (Início):**
-   - Destaque para *"Inovação & Inteligência Estratégica"*.
-   - Chamada para ação dupla: *"Solicitar Diagnóstico Gratuito"* e *"Conhecer Serviços"*.
-   - Cartão holográfico interativo com métricas de performance e status do sistema.
-   - Fundo dinâmico com constelação de partículas em HTML5 Canvas reativas ao movimento do mouse.
+   - Destaque: *"Sistemas Comerciais & Assessoria Completa MEI"*.
+   - Headline: *"Sistemas PDV, Lojas Online, ERP e Consultoria Completa para MEI"*.
+   - Chamadas para ação rápida (*Solicitar Orçamento Gratuito* e *Conhecer Nossas Soluções*).
+   - Vitrine holográfica 3D com status dos 4 módulos ativos em tempo real (PDV, Loja Online, ERP e MEI).
+   - Fundo dinâmico com constelação de partículas em HTML5 Canvas reativas ao cursor.
 
 3. **Seção "Quem Somos":**
-   - Detalhamento da missão, inovação e inteligência estratégica.
-   - 3 pilares fundamentais: *Inteligência Estratégica*, *Inovação Aplicada* e *Parceria Consultiva Próxima*.
-   - Unidade dedicada tanto para empresas quanto para MEIs.
+   - Apresentação da proposta de valor: softwares eficientes para balcão e web combinados com a tranquilidade de uma gestão contábil/fiscal especializada para o MEI.
+   - 3 pilares essenciais: *Sistemas Sob Medida para Vendas*, *Especialistas em MEI Ponta a Ponta* e *Atendimento Humano no WhatsApp*.
 
-4. **Seção "Serviços" (4 Cards Especializados):**
-   1. **Consultoria Estratégica em TI:** Auditoria, planejamento tecnológico e redução de custos.
-   2. **Transformação Digital:** Automação de processos, nuvem e modernização de operações.
-   3. **Infraestrutura & Segurança:** Proteção cibernética, LGPD, redes seguras e backup em nuvem.
-   4. **Serviços e Burocracia para MEIs:** Emissão de notas fiscais, controle e emissão mensal do DAS, declaração anual (DASN-SIMEI) e regularização do CNPJ.
-   - Cada card possui botão direto para conversa personalizada no WhatsApp!
+4. **Seção "Nossas Soluções" (4 Cards Especializados):**
+   1. **Sistemas PDV (Frente de Caixa):** Emissão ágil de cupons fiscais (NFC-e/SAT), controle de turnos/sangria, fechamento de caixa, integração com Pix, leitores e maquininhas.
+   2. **Sites para Vendas Online (E-commerce):** Lojas virtuais responsivas, checkout transparente, cálculo automático de frete (Correios/transportadoras) e meios de pagamento integrados.
+   3. **Sistemas ERP (Gestão Empresarial):** Controle financeiro completo (fluxo de caixa, contas a pagar/receber), controle de estoque em tempo real com alerta de reposição e emissão de NF-e.
+   4. **Consultoria Completa para MEI:** Formalização e abertura gratuita com CNAEs corretos, emissão diária/mensal de notas fiscais (NFS-e e NF-e), controle/envio do DAS, declaração anual (DASN-SIMEI) e parcelamento de débitos.
+   - *Todos os cards possuem botões com links diretos personalizados para o WhatsApp.*
 
 5. **Seção "Por que nos escolher" (Diferenciais):**
-   - 6 diferenciais estratégicos com design em cartões escuros com realce em ciano.
+   - Ecossistema Integrado de Vendas (PDV + Loja Online + ERP sincronizados).
+   - MEI Sem Burocracia e Sem Multas (monitoramento proativo de prazos).
+   - Atendimento ágil e suporte direto no WhatsApp.
+   - Softwares leves e modernos que não travam.
+   - Apoio desde a formalização até a migração para ME.
+   - Investimento justo e acessível para o micro e pequeno empreendedor.
 
 6. **Seção de Contato & Canais Rápidos:**
-   - Formulário completo com validação de dados.
-   - Redirecionamento automático e inteligente para o WhatsApp com a mensagem formatada.
+   - Formulário com seleção de soluções (PDV, Vendas Online, ERP, Consultoria MEI) e validação.
+   - Redirecionamento automático e inteligente para o WhatsApp com a mensagem pré-formatada.
    - Links diretos com 1 clique:
      - 📱 **WhatsApp:** `(11) 96639-8871`
      - ✉️ **E-mail:** `argoloconsultoriaetecnologia@gmail.com`
      - 📸 **Instagram:** `@consultoriaargolo`
    - Botão flutuante de WhatsApp persistente no canto inferior direito.
 
-7. **Rodapé:**
-   - Informações completas de copyright, links rápidos e botão *"Voltar ao Topo"*.
+7. **Rodapé Completo:**
+   - Copyright oficial, mapa do site, links rápidos para as redes e botão *"Voltar ao Topo"*.
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-Você tem **duas opções** super simples para rodar o site:
-
 ### Opção 1: Execução Estática (Sem necessidade de instalar nada)
-Basta dar um duplo clique no arquivo `index.html` ou abri-lo com qualquer navegador (Google Chrome, Edge, Firefox, Safari).
+Dê um duplo clique no arquivo `index.html` ou abra com qualquer navegador moderno (Chrome, Edge, Firefox).
 
-Se utilizar o VS Code, pode utilizar a extensão **Live Server** para visualização instantânea.
-
-### Opção 2: Com Servidor Python Flask (Opcional para backend)
-O projeto inclui um servidor Flask pré-configurado com rota de API para salvar os contatos recebidos em `leads_recebidos.json`:
-
+### Opção 2: Com Servidor Python Flask (Opcional)
 1. Instale as dependências:
    ```bash
    pip install -r requirements.txt
@@ -79,10 +77,4 @@ O projeto inclui um servidor Flask pré-configurado com rota de API para salvar 
    ```
    http://localhost:5000
    ```
-
----
-
-## 📱 Responsividade e Compatibilidade
-- 100% responsivo para celulares, tablets, notebooks e monitores ultra-wide.
-- Todos os ícones são SVGs vetorizados embutidos para máxima velocidade e sem dependência de conexões externas lentas.
-- Otimizado para SEO e compartilhamento em redes sociais / WhatsApp (Open Graph).
+   *Os contatos enviados pelo formulário são salvos automaticamente em `leads_recebidos.json`.*
