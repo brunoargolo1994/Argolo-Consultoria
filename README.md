@@ -15,7 +15,7 @@ Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecno
 ## 🏗️ Estrutura & Soluções em Destaque
 
 1. **Cabeçalho & Navegação Fixa:**
-   - Logotipo tecnológico com monograma: **Argolo Consultoria e Tecnologia - Sistemas & Assessoria MEI**.
+   - Logotipo oficial da marca integrado (`img/logo.jpg`), aplicado no cabeçalho, rodapé, favicon e catálogo PDF.
    - Menu dinâmico responsivo (*Início, Quem Somos, Soluções, Diferenciais, Contato*).
    - Efeito *Glassmorphism* com indicador de rolagem ativa e menu mobile adaptado.
 
