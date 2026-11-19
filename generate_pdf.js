@@ -108,13 +108,13 @@ class AdvancedPdfBuilder {
 function buildPortfolioWithLogo() {
   const builder = new AdvancedPdfBuilder();
 
-  // Load official logo image
-  const logoPath = path.join(__dirname, 'img', 'logo.jpg');
+  // Load official cropped logo image (745 x 179 px)
+  const logoPath = path.join(__dirname, 'img', 'logo_cropped.jpg');
   const logoBuffer = fs.readFileSync(logoPath);
 
   // Register image XObject
   const logoObjNum = builder.addBinaryObject(
-    `<< /Type /XObject /Subtype /Image /Width 1024 /Height 571 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${logoBuffer.length} >>`,
+    `<< /Type /XObject /Subtype /Image /Width 745 /Height 179 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${logoBuffer.length} >>`,
     logoBuffer
   );
   builder.registerXObject('CompanyLogo', logoObjNum);
@@ -164,19 +164,17 @@ function buildPortfolioWithLogo() {
   // Cyan top accent banner
   rect(p1, 0, 835, 595.28, 7, 0, 0.82, 1);
 
-  // Draw Official Logo on Top Left
-  // Logo aspect ratio 1024 / 571 = ~1.79
-  const logoW = 160;
-  const logoH = Math.round(logoW * (571 / 1024)); // ~89
-  drawImage(p1, 'CompanyLogo', 40, 730, logoW, logoH);
+  // Draw Official Logo on Top Left (Aspect ratio 745 / 179 = ~4.162)
+  const logoW = 210;
+  const logoH = Math.round(logoW * (179 / 745)); // ~50
+  drawImage(p1, 'CompanyLogo', 40, 745, logoW, logoH);
 
   // Top header text on Right side of logo
-  rect(p1, 215, 730, 340, logoH, 0.04, 0.08, 0.18);
-  strokeRect(p1, 215, 730, 340, logoH, 0, 0.82, 1, 1);
-  text(p1, 'ARGOLO CONSULTORIA E TECNOLOGIA', 'F2', 13, 230, 792, 1, 1, 1);
-  text(p1, 'SISTEMAS COMERCIAIS & ASSESSORIA TOTAL MEI', 'F2', 9, 230, 775, 0, 0.82, 1);
-  text(p1, 'Desenvolvido atraves das Mais Avancadas Inteligencias Artificiais', 'F1', 8.5, 230, 758, 0.8, 0.85, 0.9);
-  text(p1, 'CATALOGO OFICIAL DE SOLUCOES 2026', 'F2', 8, 230, 742, 0.2, 0.95, 0.5);
+  rect(p1, 265, 735, 290, 65, 0.04, 0.08, 0.18);
+  strokeRect(p1, 265, 735, 290, 65, 0, 0.82, 1, 1);
+  text(p1, 'CATALOGO OFICIAL DE SOLUCOES 2026', 'F2', 10, 280, 778, 0, 0.82, 1);
+  text(p1, 'Sistemas Comerciais & Assessoria Completa MEI', 'F2', 9, 280, 762, 1, 1, 1);
+  text(p1, 'Desenvolvido atraves das Mais Avancadas Inteligencias Artificiais', 'F1', 7.5, 280, 747, 0.2, 0.95, 0.5);
 
   // Main Hero Overview Box
   rect(p1, 40, 565, 515, 145, 0.04, 0.08, 0.18);
@@ -228,13 +226,13 @@ function buildPortfolioWithLogo() {
   rect(p2, 0, 0, 595.28, 841.89, 0.02, 0.04, 0.09);
   rect(p2, 0, 835, 595.28, 7, 0, 0.82, 1);
 
-  // Mini logo on page 2
-  const miniLogoW = 100;
-  const miniLogoH = Math.round(miniLogoW * (571 / 1024)); // ~56
-  drawImage(p2, 'CompanyLogo', 40, 770, miniLogoW, miniLogoH);
+  // Mini logo on page 2 (Aspect ratio 745 / 179 = ~4.162)
+  const miniLogoW = 145;
+  const miniLogoH = Math.round(miniLogoW * (179 / 745)); // ~35
+  drawImage(p2, 'CompanyLogo', 40, 772, miniLogoW, miniLogoH);
 
-  text(p2, 'ARGOLO CONSULTORIA E TECNOLOGIA', 'F2', 12, 150, 804, 0, 0.82, 1);
-  text(p2, 'SOLUCOES DE GESTAO EMPRESARIAL INTEGRADA E ASSESSORIA MEI', 'F1', 9.5, 150, 788, 0.8, 0.85, 0.9);
+  text(p2, 'SOLUCOES DE GESTAO EMPRESARIAL INTEGRADA & ASSESSORIA MEI', 'F2', 10, 200, 792, 0, 0.82, 1);
+  text(p2, 'Softwares Comerciais Desenvolvidos com Inteligencias Artificiais Avancadas', 'F1', 8.5, 200, 776, 0.8, 0.85, 0.9);
   line(p2, 40, 760, 555, 760, 0.2, 0.3, 0.4);
 
   // Section 3 Box: ERP
