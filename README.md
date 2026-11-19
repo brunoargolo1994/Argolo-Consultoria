@@ -50,7 +50,7 @@ Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecno
    - Redirecionamento automático e inteligente para o WhatsApp com a mensagem pré-formatada.
    - Links diretos com 1 clique:
      - 📱 **WhatsApp:** `(11) 96639-8871`
-     - ✉️ **E-mail:** `argoloconsultoriaetecnologia@gmail.com`
+     - ✉️ **E-mail:** `contato@argoloconsultotec.com.br`
      - 📸 **Instagram:** `@consultoriaargolo`
    - Botão flutuante de WhatsApp persistente no canto inferior direito.
 
