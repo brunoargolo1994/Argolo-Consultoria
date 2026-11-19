@@ -36,6 +36,7 @@ Landing page de alta conversão desenvolvida para a **Argolo Consultoria e Tecno
    3. **Sistemas ERP (Gestão Empresarial) com IA:** Controle financeiro completo (fluxo de caixa, contas a pagar/receber), controle de estoque em tempo real com alerta de reposição e emissão de NF-e.
    4. **Consultoria Completa para MEI:** Formalização e abertura gratuita com CNAEs corretos, emissão diária/mensal de notas fiscais (NFS-e e NF-e), controle/envio do DAS, declaração anual (DASN-SIMEI) e parcelamento de débitos.
    - *Todos os cards possuem botões com links diretos personalizados para o WhatsApp.*
+   - **Catálogo / Portfólio para Download:** Box de destaque com botão para baixar o catálogo oficial em PDF (`downloads/Portfolio_Servicos_Argolo.pdf`) e link para visualização online (`portfolio.html`).
 
 5. **Seção "Por que nos escolher" (Diferenciais):**
    - Desenvolvimento com as mais avançadas Inteligências Artificiais mundiais.

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Serviços | Argolo Consultoria e Tecnologia</title>
+  <meta name="description" content="Catálogo completo de soluções: Sistemas PDV, Lojas Online, ERPs com IA e Consultoria Total para MEI." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-dark: #050a18;
+      --bg-card: rgba(12, 24, 54, 0.7);
+      --cyan: #00d2ff;
+      --silver: #cbd5e1;
+      --silver-muted: #94a3b8;
+      --white: #ffffff;
+      --border: rgba(203, 213, 225, 0.15);
+      --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-dark);
+      color: var(--silver);
+      line-height: 1.6;
+      padding-bottom: 3rem;
+    }
+
+    .top-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(5, 10, 24, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .top-action-bar a, .top-action-bar button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--silver);
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.05); color: var(--white); }
+
+    .btn-download {
+      background: linear-gradient(135deg, #00d2ff 0%, #0088cc 100%);
+      border: none;
+      color: #030814;
+      font-weight: 700;
+    }
+    .btn-download:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4); }
+
+    .btn-print {
+      background: rgba(12, 24, 54, 0.8);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+    }
+    .btn-print:hover { background: rgba(0, 210, 255, 0.15); color: var(--white); }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .portfolio-sheet {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .brand-title span { color: var(--cyan); }
+    .doc-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 6px;
+      background: rgba(0, 210, 255, 0.1);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 210, 255, 0.3);
+    }
+
+    .doc-intro {
+      margin-bottom: 2.5rem;
+    }
+    .doc-intro h1 {
+      font-size: 1.85rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .doc-intro p {
+      font-size: 1.05rem;
+      color: var(--silver);
+      line-height: 1.65;
+    }
+
+    .service-block {
+      background: rgba(5, 10, 24, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem;
+      margin-bottom: 1.75rem;
+      border-left: 4px solid var(--cyan);
+    }
+
+    .service-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-block h3 {
+      font-size: 1.25rem;
+      color: var(--white);
+    }
+
+    .service-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      background: rgba(0, 210, 255, 0.1);
+      color: var(--cyan);
+    }
+
+    .service-block p.desc {
+      font-size: 0.95rem;
+      color: var(--silver-muted);
+      margin-bottom: 1rem;
+    }
+
+    .bullets-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+
+    .bullets-list li {
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--silver);
+    }
+    .bullets-list li::before {
+      content: '✓';
+      color: var(--cyan);
+      font-weight: bold;
+    }
+
+    .differentials-box {
+      margin: 2.5rem 0;
+      padding: 1.75rem;
+      background: rgba(15, 28, 59, 0.5);
+      border: 1px solid rgba(0, 210, 255, 0.3);
+      border-radius: 14px;
+    }
+
+    .differentials-box h4 {
+      font-size: 1.15rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .contact-banner {
+      background: linear-gradient(135deg, rgba(12, 24, 54, 0.9) 0%, rgba(5, 10, 24, 0.9) 100%);
+      border: 1px solid var(--cyan);
+      border-radius: 14px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contact-banner h4 {
+      font-size: 1.35rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-banner p {
+      font-size: 0.95rem;
+      color: var(--silver-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-buttons-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Print Styles */
+    @media print {
+      .top-action-bar { display: none !important; }
+      body { background: #fff !important; color: #111 !important; padding: 0 !important; }
+      .container { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+      .portfolio-sheet {
+        background: #fff !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        color: #111 !important;
+      }
+      .brand-title, .doc-intro h1, .service-block h3, .differentials-box h4, .contact-banner h4 {
+        color: #0c1836 !important;
+      }
+      .service-block {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-left: 5px solid #0088cc !important;
+        page-break-inside: avoid;
+        color: #334155 !important;
+      }
+      .bullets-list li { color: #334155 !important; }
+      .bullets-list li::before { color: #0088cc !important; }
+      .differentials-box { background: #f1f5f9 !important; border: 1px solid #94a3b8 !important; page-break-inside: avoid; }
+      .contact-banner { background: #f8fafc !important; border: 1px solid #0088cc !important; page-break-inside: avoid; }
+      .service-tag, .doc-badge { background: #e0f2fe !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; }
+      .desc { color: #475569 !important; }
+    }
+
+    @media (max-width: 768px) {
+      .bullets-list { grid-template-columns: 1fr; }
+      .portfolio-sheet { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Navigation Bar -->
+  <div class="top-action-bar">
+    <a href="index.html" class="btn-back">
+      <span>← Voltar ao Site</span>
+    </a>
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <button onclick="window.print()" class="btn-print">
+        <span>🖨️ Imprimir / Salvar em PDF</span>
+      </button>
+      <a href="downloads/Portfolio_Servicos_Argolo.pdf" download="Portfolio_Servicos_Argolo.pdf" class="btn-download">
+        <span>⬇️ Baixar Arquivo PDF Oficial</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <main class="portfolio-sheet">
+      <!-- Document Header -->
+      <header class="doc-header">
+        <div>
+          <div class="brand-title">ARGOLO <span>TECNOLOGIA</span></div>
+          <p style="font-size: 0.85rem; color: var(--silver-muted);">Consultoria, Sistemas Comerciais & Gestão MEI</p>
+        </div>
+        <div class="doc-badge">Catálogo Oficial de Serviços 2026</div>
+      </header>
+
+      <!-- Document Intro -->
+      <section class="doc-intro">
+        <h1>Portfólio de Serviços & Soluções Corporativas</h1>
+        <p>
+          Desenvolvemos softwares comerciais de alto padrão — de <strong>Sistemas PDV</strong> e <strong>Lojas Online</strong> a <strong>ERPs sob medida</strong> — concebidos através das <strong>mais avançadas Inteligências Artificiais do mundo</strong>, aliados à <strong>assessoria completa para MEI</strong>, da formalização às obrigações fiscais diárias.
+        </p>
+      </section>
+
+      <!-- Solution 1: PDV -->
+      <article class="service-block">
+        <div class="service-block-header">
+          <h3>01. Sistemas PDV (Frente de Caixa Inteligente)</h3>
+          <span class="service-tag">DESENVOLVIDO COM IA</span>
+        </div>
+        <p class="desc">
+          Sistemas de ponto de venda de altíssima performance para eliminar filas e travamentos no balcão, garantindo rapidez milimétrica no atendimento ao cliente.
+        </p>
+        <ul class="bullets-list">
+          <li>Emissão ágil de Cupom Fiscal Eletrônico (NFC-e / SAT) e recibos</li>
+          <li>Controle de turnos, sangrias, suprimentos e fechamento cego de caixa</li>
+          <li>Integração total com maquininhas de cartão, TEF, leitores de código e Pix</li>
+          <li>Sincronização automática com controle de estoque e retaguarda</li>
+        </ul>
+      </article>
+
+      <!-- Solution 2: Vendas Online -->
+      <article class="service-block">
+        <div class="service-block-header">
+          <h3>02. Sites para Vendas Online & E-commerce</h3>
+          <span class="service-tag">ENGENHARIA COM IA</span>
+        </div>
+        <p class="desc">
+          Lojas virtuais e catálogos online arquitetados com Inteligência Artificial para carregar em milissegundos, oferecer checkout seguro e maximizar suas vendas.
+        </p>
+        <ul class="bullets-list">
+          <li>Lojas virtuais 100% responsivas otimizadas para smartphones</li>
+          <li>Integração de pagamentos com Pix com baixa automática, cartão e boleto</li>
+          <li>Cálculo de frete em tempo real (Correios, Melhor Envio e transportadoras)</li>
+          <li>Painel simples para gerenciar produtos, preços e pedidos em tempo real</li>
+        </ul>
+      </article>
+
+      <!-- Solution 3: ERP -->
+      <article class="service-block">
+        <div class="service-block-header">
+          <h3>03. Sistemas ERP sob Medida (Gestão Empresarial)</h3>
+          <span class="service-tag">AUTOMAÇÃO COM IA</span>
+        </div>
+        <p class="desc">
+          Centralize toda a operação da sua empresa em uma única tela. Elimine planilhas manuais e tenha controle exato de receitas, compras e estoque.
+        </p>
+        <ul class="bullets-list">
+          <li>Gestão financeira: contas a pagar, contas a receber e fluxo de caixa</li>
+          <li>Controle inteligente de estoque com alertas preditivos de reposição</li>
+          <li>Emissão automatizada de Nota Fiscal Eletrônica (NF-e mercantil)</li>
+          <li>Demonstrativo de Resultados (DRE), relatórios de faturamento e margem</li>
+        </ul>
+      </article>
+
+      <!-- Solution 4: Consultoria MEI -->
+      <article class="service-block">
+        <div class="service-block-header">
+          <h3>04. Consultoria Completa para MEI</h3>
+          <span class="service-tag">ASSESSORIA TOTAL</span>
+        </div>
+        <p class="desc">
+          Cuidamos de tudo para você não se preocupar com burocracias fiscais, evitar multas e manter seu CNPJ 100% regular perante a Receita Federal e Prefeitura.
+        </p>
+        <ul class="bullets-list">
+          <li>Formalização e abertura do CNPJ MEI com enquadramento de CNAEs correto</li>
+          <li>Emissão mensal e diária de Notas Fiscais (NFS-e de serviços e NF-e de comércio)</li>
+          <li>Geração, envio e parcelamento mensal da guia DAS</li>
+          <li>Declaração Anual de Faturamento (DASN-SIMEI) e regularização de pendências</li>
+        </ul>
+      </article>
+
+      <!-- Differentials -->
+      <section class="differentials-box">
+        <h4>Por Que Escolher a Argolo Consultoria e Tecnologia?</h4>
+        <ul class="bullets-list">
+          <li>Softwares desenvolvidos com as mais avançadas IAs mundiais</li>
+          <li>Ecossistema integrado: PDV, Loja Online e ERP conversando entre si</li>
+          <li>Suporte ágil e atendimento humano direto no WhatsApp</li>
+          <li>Zero burocracia para MEI: acompanhamento contínuo sem multas</li>
+          <li>Investimento sob medida para o micro e pequeno comerciante</li>
+          <li>Transparência total e suporte técnico do primeiro dia ao crescimento</li>
+        </ul>
+      </section>
+
+      <!-- Contact Banner -->
+      <footer class="contact-banner">
+        <h4>Pronto para Levar Seu Negócio ao Próximo Nível?</h4>
+        <p>Fale diretamente com nossa equipe para um diagnóstico gratuito e personalizado.</p>
+        <div class="contact-buttons-row">
+          <a href="https://wa.me/5511966398871?text=Ol%C3%A1%2C%20visualizei%20o%20Portf%C3%B3lio%20de%20Servi%C3%A7os%20da%20Argolo%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-download" style="padding: 0.75rem 1.5rem;">
+            <span>💬 Falar no WhatsApp: (11) 96639-8871</span>
+          </a>
+          <a href="mailto:contato@argoloconsultotec.com.br" class="btn-print" style="padding: 0.75rem 1.5rem;">
+            <span>✉️ contato@argoloconsultotec.com.br</span>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

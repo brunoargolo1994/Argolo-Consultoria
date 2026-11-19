@@ -1011,6 +1011,80 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(4px);
 }
 
+/* Portfolio Download Callout Box */
+.portfolio-download-box {
+  margin-top: 3.5rem;
+  background: linear-gradient(135deg, rgba(14, 26, 53, 0.9) 0%, rgba(6, 13, 29, 0.95) 100%);
+  border: 1px solid rgba(0, 210, 255, 0.35);
+  border-radius: 20px;
+  padding: 2.2rem 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 210, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+.pdb-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pdb-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(0, 210, 255, 0.15);
+  border: 1px solid rgba(0, 210, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan-primary);
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+.pdb-text h3 {
+  font-size: 1.35rem;
+  color: var(--white);
+  margin-bottom: 0.35rem;
+}
+
+.pdb-text p {
+  font-size: 0.95rem;
+  color: var(--silver-muted);
+  max-width: 580px;
+}
+
+.pdb-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .portfolio-download-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  .pdb-left {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pdb-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .pdb-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ==========================================================================
    Section: Por que nos escolher (Diferenciais)
    ========================================================================== */
